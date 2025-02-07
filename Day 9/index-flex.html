@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src = "https://unpkg.com/@tailwindcss/browser@4";></script>
+    </script>
+  </head>
+  <body>
+    <div class="flex flex-col ">
+        <div class="bg-green-700 w-screen fixed flex flex-row justify-start">
+            <img src="profile-img.jpg" alt="profile picture" class="rounded-2xl w-[40px] h-[40px] ml-2 my-2" />
+            <h1 class="font-mono border-white ml-4 items-center pt-4 text-2xl text-white">Jeroen Brianraj B</h1>
+        </div>
+        <div class="flex flex-row mt-[57px]">
+            <button onclick="onToggleMenu()" id="menu-btn" class="bg-black w-[60px] h-[60px] z-7 fixed md:hidden">
+                <img src="menu.png" class="ml-[2px] mt-[2px]  w-[55px] h-[55px] z-6" alt="">
+            </button>
+            <div class="bg-black w-screen z-3 h-[60px] fixed md:hidden"></div>
+        </div>
+        <div class="flex flex-col space-between mt-[115px] absolute md:mt-[50px]">
+            <nav id="menu-bar" class="bg-green-900 h-screen w-[140px] mt-[1px] fixed text-center left-[-400px] md:left-[0px]">
+            <ul class="flex flex-col"> 
+                <li class="mt-[1px] border-2 bg-black border-green-700 border-solid hover:border-dotted">
+                    <a class="font-mono border-white items-center pt-4 text-lg text-white"href="#about">About</a>
+                </li>
+                <li class="bg-black border-2 border-green-700 border-solid hover:border-dotted">
+                    <a class="font-mono border-white items-center pt-4 text-lg text-white" href="#education">Education</a>
+                </li>
+                <li class="bg-black border-2 border-green-700 border-solid hover:border-dotted">
+                    <a class="font-mono border-white items-center pt-4 text-lg text-white" href="#projects">Projects</a>
+                </li>
+                <li class="bg-black border-2 border-green-700 border-solid hover:border-dotted">
+                    <a class="font-mono border-white items-center pt-4 text-lg text-white" href="#skills">Technical Skills</a>
+                </li>
+                <li class="bg-black border-2 border-green-700 border-solid hover::border-dotted">
+                    <a class="font-mono border-white items-center pt-4 text-lg text-white" href="#cert">Courses and Certifications</a>
+                </li>
+                <li class="bg-black border-2 border-green-700 border-solid hover::border-dotted">
+                    <a class="font-mono border-white items-center pt-4 text-lg text-white" href="#contact">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        
+            <div
+                id="content"
+                class="ml-[4px] bg-black z-[-1] mt-[10px] md:ml-[145px]"
+            >
+                <div id="about" class="pl-4 pr-2 mb-8">
+                <h2 class="text-2xl mb-2 font-mono border-white items-center pt-4 text-green-400">About:</h2>
+                <div class="flex flex-col md:flex-row">
+                    <img class="w-[200px] h-[200px] rounded-[30px] ml-[75px] mb-[10px] md:ml-[35px]" src="profile-img.jpg" alt="profile image">
+                    <p class="text-base font-mono border-white items-center text-white md:mt-[30px] md:ml-[20px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt fugiat sunt enim temporibus culpa minus amet rerum? Placeat sit fugiat odit commodi natus voluptate porro pariatur aliquam, nam aut necessitatibus, sapiente accusantium minima ullam aliquid veritatis a, animi qui id.</p>
+                </div>
+                </div>
+                <div id="education" class="pl-4 pr-2 mb-8">
+                <h2 class="text-2xl mb-2 font-mono border-white items-center pt-4 text-green-400">Education:</h2>
+                    <div class="md:ml-[35px]">
+                    <h3 class="text-xl font-mono border-white items-center text-green-500">Lorem ipsum: </h3>
+                    <p class="text-base font-mono border-white items-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. autem?</p>
+                    <h3 class="text-xl font-mono border-white items-center text-green-500">Lorem ipsum:</h3>
+                    <p class="text-base font-mono border-white items-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. autem?</p>
+                    </div>
+                </div>
+                <div id="projects" class="pl-4 pr-2 mb-8">
+                    <h2 class="text-2xl mb-2 font-mono border-white items-center pt-4 text-green-400">Projects:</h2>
+                        <div class="flex flex-col md:flex-row md:space-x-4 md:ml-[35px]">
+                            <div class="mb-4 md: mr-4">
+                                <h3 class="text-xl font-mono border-white items-center text-green-500">Lorem ipsum dolor sit amet:</h3>
+                                <img src="html-proj.png" class="w-[370px] h-[250px] md:w-[550px] md:h-[350px]" alt="">
+                                <p class="text-base font-mono border-white items-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia <br> tempore necessitatibus eveniet officiis?</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-mono border-white items-center text-green-500">Lorem ipsum dolor sit amet:</h3>
+                                <img src="css-proj.png" class="w-[370px] h-[250px] md:w-[550px] md:h-[350px]" alt="">
+                                <p class="text-base font-mono border-white items-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam <br>quam quae rerum mollitia voluptas?</p>
+                            </div>
+                        </div>
+                </div>
+                <div id="skills" class="pl-4 pr-2 mb-8">
+                    <h2 class="text-2xl mb-2 font-mono border-white items-center pt-4 text-green-400">Technical Skills:</h2>
+                        <div class="md:ml-[35px]">
+                        <h3 class="text-xl font-mono border-white items-center text-green-500">Lorem ipsum: </h3>
+                        <p class="text-base font-mono border-white items-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. autem?</p>
+                        <h3 class="text-xl font-mono border-white items-center text-white">Lorem ipsum:</h3>
+                        <p class="text-base font-mono border-white items-center text-green-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. autem?</p>
+                    </div>
+                </div>
+                <div id="certf" class="pl-4 pr-2 mb-8">
+                    <h2 class="text-2xl mb-2 font-mono border-white items-center pt-4 text-green-400">Courses and Certifications:</h2>
+                    <div class="flex flex-col md:flex-row md:ml-[35px]">
+                        <div class="mb-4 md:mr-4">
+                            <h3 class="text-xl font-mono border-white items-center text-green-500">Lorem ipsum dolor sit amet:</h3>
+                            <img src="cert-1.png" class="w-[370px] h-[250px] md:w-[550px] md:h-[350px]" alt="">
+                            <p class="text-base font-mono border-white items-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia <br>tempore necessitatibus eveniet officiis?</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-mono border-white items-center text-green-500">Lorem ipsum dolor sit amet:</h3>
+                            <img src="cert-2.png" class="w-[370px] h-[250px] md:w-[550px] md:h-[350px]" alt="">
+                            <p class="text-base font-mono border-white items-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam <br> quam quae rerum mollitia voluptas?</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact" class="pl-4 pr-2 mb-8">
+                    <h2 class="text-2xl mb-2 font-mono border-white items-center pt-4 text-green-400">Contact:</h2>
+                        <div class="md:ml-[35px]">
+                        <h3 class="text-xl font-mono border-white items-center text-green-500">Phone: </h3>
+                        <p class="text-base font-mono border-white items-center text-white">+91 7204777163</p>
+                        <h3 class="text-xl font-mono border-white items-center text-green-500">Email:</h3>
+                        <p class="text-base font-mono border-white items-center text-white">jerrybrian105@gmail.com</p>
+                        <h3 class="text-xl font-mono border-white items-center text-green-500">LinkedIn: </h3>
+                        <a href="" class="text-base font-mono border-white items-center text-white no-underline">Jeroen Brianraj</a>
+                        <h3 class="text-xl font-mono border-white items-center text-green-500">Github:</h3>
+                        <a href="" class="text-base font-mono border-white items-center text-white no-underline">Jeroen-Brian</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function onToggleMenu(e){
+           const menubar = document.querySelector("#menu-bar")
+           menubar.classList.toggle('left-[0px]')
+            // menu= document.querySelector("#menu-btn")
+            // menubar = document.querySelector("#menu-bar")
+            // menu.addEventListener("click", menubar.setAttribute("left", "[0px]"))
+    };
+    </script>
+  </body>
+</html>
